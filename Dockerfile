@@ -7,7 +7,7 @@ COPY --chown=1000:1000 . .
 RUN make build
 
 
-FROM ubuntu:focal
+FROM ubuntu:focal-20220426
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	keepalived && \
